@@ -25,7 +25,7 @@
         <input type="password" placeholder="Enter Password" name="password" required>  
       </div>
       
-      <button type="submit">Log in</button>
+      <button type="submit" value="Login" onclick=javascript.validate(username.value,password.value)>Log in</button>
       <input type="checkbox" checked="checked" style="margin-top:5%;"> Remember me 
       <div class="or">Or</div>
       <div class="icon-button">   
@@ -41,6 +41,22 @@
       </div>
     </form>
   </div>
+
+  <script>
+    function validate(text1,text2)
+{
+    if(username== frontend && password== developer)
+    load("run.html");
+    else
+    {
+        load("fail.html");
+    }
+}
+function load(url)
+{
+    location href = dashboard.html;
+}
+  </script>
 
 </body>
 </html>
